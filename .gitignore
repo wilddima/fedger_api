@@ -16,3 +16,5 @@
 mkmf.log
 .ruby-gemset
 .ruby-version
+fedger_api.yml
+/spec/fixtures/vcr_cassettes/

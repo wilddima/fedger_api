@@ -2,44 +2,50 @@ module FedgerAPI
   class Client
     module Company
       def funding_details(company_domain)
-        self.class.get("/company/#{company_domain}/funding/details", @options)
+        provider(company_domain, 'funding/details')
       end
 
       def funding_status(company_domain)
-        self.class.get("/company/#{company_domain}/funding/status", @options)
+        provider(company_domain, 'funding/status')
       end
 
       def fundings(company_domain)
-        self.class.get("/company/#{company_domain}/fundings", @options)
+        provider(company_domain, 'fundings')
       end
 
       def company_insights(company_domain)
-        self.class.get("/company/#{company_domain}/insights", @options)
+        provider(company_domain, 'insights')
       end
 
       def investors(company_domain)
-        self.class.get("/company/#{company_domain}/investors", @options)
+        provider(company_domain, 'investors')
       end
 
       def locations(company_domain)
-        self.class.get("/company/#{company_domain}/locations", @options)
+        provider(company_domain, 'locations')
       end
 
       def peers(company_domain)
-        self.class.get("/company/#{company_domain}/peers", @options)
+        provider(company_domain, 'peers')
       end
 
       def portfolio_companies(company_domain)
-        self.class.get("/company/#{company_domain}/portfolio", @options)
+        provider(company_domain, 'portfolio')
       end
 
       def snapshot(company_domain)
-        self.class.get("/company/#{company_domain}/snapshot", @options)
+        provider(company_domain, 'snapshot')
       end      
 
       def team_details(company_domain)
-        self.class.get("/company/#{company_domain}/team/details", @options)
+        provider(company_domain, 'team/details')
       end      
+
+      private
+
+      def provider(company_domain,uri)
+        self.class.get("/company/#{company_domain}/#{uri}", @options).to_h
+      end
     end
   end
 end

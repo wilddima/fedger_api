@@ -1,3 +1,3 @@
 == Fedger_api
--------------
+
 Ruby library for https://fedger.io api.

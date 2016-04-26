@@ -2,8 +2,12 @@ require 'spec_helper'
 require_relative '../../lib/fedger_api/client'
 
 
-describe FedgerAPI::Client, vcr: true do  
-  fedger_api_config = YAML::load_file(File.join(__dir__, '../../fedger_api.yml'))
+describe FedgerAPI::Client, vcr: true do
+  # fedger_api_config = YAML::load_file(File.join(__dir__, '../../fedger_api.yml'))
+  fedger_api_config = {}
+  fedger_api_config['api_key'] = 'ed30ea0896b8449ec44e974a40d1b0e3'
+  fedger_api_config['discovery_query'] = 's'
+  fedger_api_config['test_company'] = 'google.com'
 
   let(:client) { FedgerAPI::Client.new(fedger_api_config['api_key']) }
 
@@ -83,6 +87,29 @@ describe FedgerAPI::Client, vcr: true do
 
       it { should be_an Hash }
       it { should include('domain', 'name', 'team') }
+    end
+  end
+
+  context FedgerAPI::Client::Discover do
+    context '#discovery' do
+      subject { client.discovery(fedger_api_config['discovery_query']) }
+
+      it { should be_an Hash }
+      it { should include('data') }
+    end
+
+    context '#discovery_companies' do
+      subject { client.discovery_companies(fedger_api_config['discovery_query']) }
+
+      it { should be_an Hash }
+      it { should include('cursor', 'data') }
+    end
+
+    context '#discovery_vertices' do
+      subject { client.discovery_vertices(fedger_api_config['discovery_query']) }
+
+      it { should be_an Hash }
+      it { should include('cursor', 'total_count', 'data') }
     end
   end
 end

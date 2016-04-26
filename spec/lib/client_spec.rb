@@ -3,11 +3,7 @@ require_relative '../../lib/fedger_api/client'
 
 
 describe FedgerAPI::Client, vcr: true do
-  # fedger_api_config = YAML::load_file(File.join(__dir__, '../../fedger_api.yml'))
-  fedger_api_config = {}
-  fedger_api_config['api_key'] = 'ed30ea0896b8449ec44e974a40d1b0e3'
-  fedger_api_config['discovery_query'] = 's'
-  fedger_api_config['test_company'] = 'google.com'
+  fedger_api_config = YAML::load_file(File.join(__dir__, '../../fedger_api.yml'))
 
   let(:client) { FedgerAPI::Client.new(fedger_api_config['api_key']) }
 

@@ -9,4 +9,8 @@ Gem::Specification.new do |s|
   s.files       = `git ls-files -z`.split("\x0")
   s.license     = 'MIT'
   s.homepage    = 'https://github.com/WildDima/fedger_api'
+
+  s.add_development_dependency "bundler", "~> 1.12"
+  s.add_development_dependency "rake", "~> 10.0"
+  s.add_development_dependency "rspec", "~> 3.0"
 end

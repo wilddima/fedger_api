@@ -1,0 +1,5 @@
+language: ruby
+cache: bundler
+script: bundle exec rake spec
+rvm:
+  -  2.2.0

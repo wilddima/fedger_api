@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.homepage    = 'https://github.com/WildDima/fedger_api'
 
-  s.add_development_dependency "bundler", "~> 1.12"
+  s.add_development_dependency "bundler"
   s.add_development_dependency "rake", "~> 11.0"
   s.add_development_dependency "rspec", "~> 3.0"
 end

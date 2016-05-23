@@ -8,4 +8,4 @@ group :test do
   gem 'webmock'
 end
 
-fedger_api.gemspec
+gemspec

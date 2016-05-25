@@ -1,0 +1,104 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fedger.io/v1/discover/vertices?apikey=ed30ea0896b8449ec44e974a40d1b0e3&s=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 25 May 2016 19:25:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - origin,accept-encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-None-Match, apikey
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Cache-Control:
+      - no-cache
+      Via:
+      - kong/0.5.4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"statusCode":400,"error":"Bad Request","message":"child \"s\" fails
+        because [single value of \"s\" fails because [\"0\" is not allowed to be empty]]","validation":{"source":"query","keys":["s.0"]}}'
+    http_version: 
+  recorded_at: Wed, 25 May 2016 19:25:41 GMT
+- request:
+    method: get
+    uri: https://api.fedger.io/v1/discover/vertices?apikey=ed30ea0896b8449ec44e974a40d1b0e3&s=google
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 May 2016 19:28:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - origin,accept-encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-None-Match, apikey
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Cache-Control:
+      - no-cache
+      Via:
+      - kong/0.5.4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"cursor":0,"total_count":200,"data":[{"_id":"Tag/1040027864511","mc":5738,"ec":108922,"name":"marketing"},{"_id":"Tag/1041010445759","mc":455,"ec":91227,"name":"developer"},{"_id":"Tag/90646638085212","mc":53832,"ec":61347,"name":"social-media"},{"_id":"Tag/1040059715007","mc":367,"ec":35681,"name":"finance"},{"_id":"Tag/90646718039132","mc":2964,"ec":34952,"name":"ecommerce"},{"_id":"Tag/90646857237596","mc":2116,"ec":34446,"name":"e-commerce"},{"_id":"Tag/1040031403455","mc":26419,"ec":32754,"name":"mobile"},{"_id":"Tag/90646732719196","mc":9406,"ec":31552,"name":"advertising"},{"_id":"Tag/1040023408063","mc":1147,"ec":29126,"name":"software"},{"_id":"Tag/90646878864476","mc":486,"ec":27054,"name":"real-estate"},{"_id":"Tag/90646860645468","mc":2049,"ec":22434,"name":"web
+        design"},{"_id":"Tag/90646768895068","mc":0,"ec":22278,"name":"curated web"},{"_id":"Tag/90646843343964","mc":90,"ec":21440,"name":"enterprise
+        software"},{"_id":"Tag/90646604661852","mc":16,"ec":19818,"name":"business-development"},{"_id":"Tag/90646830367836","mc":268,"ec":18886,"name":"digital-media"},{"_id":"Tag/90646618293340","mc":1462,"ec":18310,"name":"web-development"},{"_id":"Tag/1040083176895","mc":22,"ec":18059,"name":"angels"},{"_id":"City/2892772330943","ec":17393,"mc":19606,"countryCode":"US","city":"San
+        Francisco"},{"_id":"City/2892452384191","ec":15828,"mc":15460,"countryCode":"US","city":"New
+        York"},{"_id":"Tag/90646894593116","mc":2079,"ec":14787,"name":"venture capital"},{"_id":"Tag/90646781084764","mc":34,"ec":13992,"name":"health
+        and wellness"},{"_id":"Tag/1040033762751","mc":1440,"ec":13958,"name":"education"},{"_id":"Tag/90646687237212","mc":4,"ec":12946,"name":"sales
+        and marketing"},{"_id":"Tag/1040052506047","mc":5,"ec":12217,"name":"business-to-business"},{"_id":"Tag/1040031141311","mc":291,"ec":12091,"name":"saas"}]}'
+    http_version: 
+  recorded_at: Wed, 25 May 2016 19:28:16 GMT
+recorded_with: VCR 3.0.1

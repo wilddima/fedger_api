@@ -3,3 +3,5 @@ cache: bundler
 script: bundle exec rake spec
 rvm:
   -  2.2.0
+before_script:
+  - cp fedger_api.yml.travis fedger_api.yml

@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fedger.io/v1/company/google.com/fundings?apikey=ed30ea0896b8449ec44e974a40d1b0e3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Sun, 27 Mar 2016 09:12:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - origin,accept-encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-None-Match, apikey
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Cache-Control:
+      - no-cache
+      Via:
+      - kong/0.5.4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"statusCode":500,"error":"Internal Server Error","message":"An internal
+        server error occurred"}'
+    http_version: 
+  recorded_at: Sun, 27 Mar 2016 09:12:59 GMT
+recorded_with: VCR 3.0.1

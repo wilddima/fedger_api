@@ -1,0 +1,426 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fedger.io/v1/discover/companies?apikey=ed30ea0896b8449ec44e974a40d1b0e3&s=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 25 May 2016 19:25:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - origin,accept-encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-None-Match, apikey
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Cache-Control:
+      - no-cache
+      Via:
+      - kong/0.5.4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"statusCode":400,"error":"Bad Request","message":"child \"s\" fails
+        because [single value of \"s\" fails because [\"0\" is not allowed to be empty]]","validation":{"source":"query","keys":["s.0"]}}'
+    http_version: 
+  recorded_at: Wed, 25 May 2016 19:25:40 GMT
+- request:
+    method: get
+    uri: https://api.fedger.io/v1/discover/companies?apikey=ed30ea0896b8449ec44e974a40d1b0e3&s=google
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 May 2016 19:27:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - origin,accept-encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-None-Match, apikey
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Cache-Control:
+      - no-cache
+      Via:
+      - kong/0.5.4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"cursor":0,"data":[{"_id":"Organization/1069365841343","_rev":"86478732117084","_key":"1069365841343","investorCount":null,"wentIPO":true,"wasAcquired":false,"fundingTotal":25100000,"inCount":5840,"outCount":514,"ec":6354,"fundingLevel":4,"invRatio":0.89,"mc":60378,"dateFounded":883641600,"urlTwitter":"google","urlSlug":"google","urlAngellist":"google","slug":"google","name":"Google","origin":"US","fundingCurrencyCode":"USD","urlCrunchbase":"organization/google","urlWebsite":"google.com","descShort":"Google
+        is a multinational corporation that is specialized in internet-related services
+        and products.","descFull":"Google is a multinational corporation that is specialized
+        in internet-related services and products. The companys product portfolio
+        includes Google Search, which provides users with access to information online;
+        Knowledge Graph that allows to search for things, people, or places as well
+        as builds systems recognizing speech and understanding natural language; Google
+        Now, which provides information to users when they need it; Product Listing
+        Ads that offer product image, price, and merchant information; AdWords, an
+        auction-based advertising program; AdSense, which enables websites that are
+        part of the Google Network to deliver ads; Google Display, a display advertising
+        network; DoubleClick Ad Exchange, a marketplace for the trading display ad
+        space; and YouTube that offers video, interactive, and other ad formats. Additionally,
+        the company offers Android, an open-source mobile software platform; hardware
+        products, including Chromebook, Chrome, Chromecast, and Nexus devices; Google+
+        , a social platform to share to share content with others; Google Play, a
+        cloud-based digital entertainment store for apps, music, books, and movies;
+        Google Drive, a place for users to create, share, collaborate, and keep their
+        stuff; and Google Wallet, a virtual wallet for in-store contactless payments.
+        Further, it provides Google Apps, which include Gmail, Calendar, and Google
+        Sites that are built for people to work anywhere, anytime, on any device without
+        loss of security or control; Google Maps Application Programming Interface;
+        Google Earth Enterprise, a software solution for imagery and data visualization;
+        Google App Engine, a Platform-as-a-service; Google Cloud Storage; Google BigQuery
+        for real-time analytics; Google Cloud SQL for structured query language; and
+        Google Compute Engine, an Infrastructure-as-a-service-Platform. It also offers
+        mobile wireless devices, and related products and services. Google was founded
+        by Larry Page and Sergey Brin in 1996 while they were Ph.D. students at Stanford
+        University.","type":"corporate investor","phone":"(650) 253-0000"},{"_id":"Organization/1055872634303","_rev":"86442940089436","_key":"1055872634303","fundingTotal":null,"investorCount":null,"phone":null,"wentIPO":false,"wasAcquired":false,"inCount":430,"outCount":189,"ec":619,"fundingLevel":0,"invRatio":1,"mc":1263,"dateFounded":1230796800,"urlWebsite":"gv.com","urlSlug":"gv","origin":"US","urlTwitter":"googleventures","urlCrunchbase":"organization/google-ventures","descShort":"Google
+        Ventures is the venture capital investment arm of Google Inc.","descFull":"Google
+        Ventures is the venture capital investment arm of Google Inc. and provides
+        seed, venture, and growth stage funding to technology companies. The firm
+        operates independently from Google and makes financially driven investment
+        decisions.","urlAngellist":"googleventures","slug":"google-ventures","name":"Google
+        Ventures","type":"corporate investor"},{"_id":"Organization/1077342621119","_rev":"86522258441308","_key":"1077342621119","investorCount":null,"wentIPO":false,"wasAcquired":false,"fundingTotal":19000000,"inCount":51,"outCount":65,"ec":116,"fundingLevel":2,"invRatio":0,"mc":42,"dateFounded":1262332800,"origin":"US","fundingCurrencyCode":"USD","urlTwitter":"sproutsocial","urlCrunchbase":"organization/sprout-social","urlWebsite":"sproutsocial.com","urlSlug":"sproutsocial","descShort":"Sprout
+        Social provides a platform for businesses to manage social media engagement,
+        publishing and analytics.","descFull":"Sprout Socials innovative tools help
+        businesses more effectively manage their social media and social care efforts.
+        Sprout provides social media engagement, publishing and analytic tools for
+        top global brands including AMD, McDonalds, Nokia, Pepsi, and UPS. Sprouts
+        world-class tools enable top brands and more than 10,000 customers to engage
+        on numerous social platforms including Twitter, Facebook and LinkedIn. The
+        platform manages more than 6 million social interactions per day and makes
+        it incredibly efficient to for brands to say connected. Founded in 2010 and
+        based in Chicago''s vibrant West Loop neighborhood, Sprout headquarters is
+        a lively center of technology innovation, product development, creative marketing
+        and outstanding customer service. Learn more at sproutsocial.com.","urlAngellist":"sprout-social","slug":"sprout-social","name":"Sprout
+        Social","type":"company","phone":"(866) 878-3231"},{"_id":"Organization/1087637147071","_rev":"86529390724188","_key":"1087637147071","investorCount":null,"wentIPO":false,"wasAcquired":true,"fundingTotal":22500000,"inCount":61,"outCount":31,"ec":92,"fundingLevel":5,"invRatio":0,"mc":89,"dateFounded":1136102400,"origin":"US","fundingCurrencyCode":"USD","urlTwitter":"powerset","urlCrunchbase":"organization/powerset","urlWebsite":"powerset.com","urlSlug":"powerset","descShort":"Powerset
+        is a search engine focused on in-depth natural language processing.","descFull":"Powerset
+        is a search engine focused on natural language processing. In other words,
+        Powerset will not search based simply on keywords alone, but will try to understand
+        the semantic meaning behind the search phrase as a whole. The company launched
+        in May 2008 with intentions of making search more easy and intuitive. Powerset
+        was acquired by Microsoft on 1st July 2008.","urlAngellist":"powerset","slug":"powerset","name":"Powerset","type":"company","phone":"(415)
+        309-5841"},{"_id":"Organization/1091810151871","_rev":"86440668021852","_key":"1091810151871","investorCount":null,"wentIPO":false,"wasAcquired":false,"fundingTotal":53299998,"inCount":32,"outCount":39,"ec":71,"fundingLevel":2,"invRatio":0,"mc":19,"dateFounded":1167638400,"origin":"US","fundingCurrencyCode":"USD","urlTwitter":"cloudsherpas","urlCrunchbase":"organization/cloud-sherpas","urlWebsite":"cloudsherpas.com","urlSlug":"cloudsherpas","descShort":"Cloud
+        Sherpas is a global cloud advisory and technology services company for the
+        worlds leading brands.","descFull":"Cloud Sherpas provides cloud advisory
+        and technology services to improve customer experience for the worlds leading
+        brands. With more than 900 people serving enterprise clients and thousands
+        of other businesses around the world, our global team provides cloud strategy,
+        implementation and integration support, as well as training and platform enhancements
+        for customers across all industries. Cloud Sherpas is part of the salesforce.com
+        Partner Program and has earned Global Strategic Cloud Alliance Partner status,
+        a three-time Google Enterprise Partner of the Year for Google Apps and a ServiceNow
+        Master Solutions Partner. Cloud Sherpas is headquartered in Atlanta, GA with
+        offices throughout the United States and operations in Australia, India, Japan,
+        New Zealand, Philippines, Singapore, United Arab Emirates and the United Kingdom.
+        For more information visit www.cloudsherpas.com.","urlAngellist":"cloud-sherpas","slug":"cloud-sherpas","name":"Cloud
+        Sherpas","type":"company","phone":"(888) 260-7660"},{"_id":"Organization/1044683214271","_rev":"86439113835612","_key":"1044683214271","urlCrunchbase":null,"fundingTotal":null,"investorCount":null,"urlAngellist":null,"phone":null,"inCount":18,"outCount":42,"ec":60,"fundingLevel":0,"invRatio":0,"mc":4,"dateFounded":1167638400,"descShort":"Volo","slug":"volo","name":"VOLO","urlTwitter":"volofordrbc","urlWebsite":"volorecovery.com","urlSlug":"volorecovery","descFull":"Founded
+        in 2007 VOLO has become the premier provider of SaaS solutions for the Enterprise
+        Risk Management, Business Continuity, and Disaster Recovery sectors. VOLO
+        delivers high availability communications, monitoring, alerting and storage
+        applications via a proprietary cutting edge platform. VOLO'' s reach extends
+        globally working with clients from the Fortune 100 and the United States Military
+        to Businesses and Health Care facilities in almost every US city. VOLO Recovery
+        ; (our flagship product) is a SaaS communications suite consisting of 4 integrated
+        tools. Emergency managers and BCDR professionals love the Recovery solution
+        for its ease of use. Additionally, VOLO'' s SaaS platform allows users to
+        manage/respond to multiple threats to their organization using a single integrated
+        solution. VOLO Village is a SaaS communications suite designed specifically
+        for private resident notification and alerting. Communities all over the globe
+        trust and use Village everyday to deliver alert messages directly to homeowners
+        and residents. VOLO API, provides app developers with direct access to VOLO''s
+        powerful high availability communications infrastructure. _ VOLO'' takes its
+        name from the Latin word for '' Speed or to move rapidly_. VOLO STAY CONNECTED
+        '' _'' '' STAY PROTECTED","type":"company"},{"_id":"Organization/1110909636031","_rev":"86496331023452","_key":"1110909636031","investorCount":null,"phone":null,"wentIPO":false,"wasAcquired":false,"fundingTotal":1550000,"inCount":23,"outCount":26,"ec":49,"fundingLevel":2,"invRatio":0,"mc":14,"dateFounded":1325404800,"origin":"US","fundingCurrencyCode":"USD","urlTwitter":"peekyou","urlCrunchbase":"organization/peekyou","urlWebsite":"peekyou.com","urlSlug":"peekyou","descShort":"PeekYou
+        is a people search engine that allows its users to find and contact individuals
+        online.","descFull":"PeekYou places the individual at the center of the Internet.
+        For every public weblink, PeekYou tries to answer the question, ''Who made
+        it?'' or, where applicable, ''Whom is it about?'' So far, we''ve answered
+        those questions for a billion links and counting. Our patented technology
+        analyzes content from over sixty social sites, news sources, homepages and
+        blog platforms and identifies the actual people behind it, combining their
+        scattered digital footprints into a comprehensive record of their online identity.
+        Google calculates the likelihood of any link being associated to a keyword.
+        PeekYou calculates the likelihood of any link being associated to an individual.
+        The company was founded in 2006 by Michael Hussey and is headquartered in
+        New York City.","urlAngellist":"peekyou","slug":"peekyou","name":"PeekYou","type":"company"},{"_id":"Organization/1064159989183","_rev":"86458073269340","_key":"1064159989183","investorCount":null,"urlAngellist":null,"phone":null,"wentIPO":false,"wasAcquired":false,"fundingTotal":100000,"inCount":19,"outCount":28,"ec":47,"fundingLevel":1,"invRatio":0,"mc":0,"dateFounded":1357027200,"urlSlug":"witget","slug":"witget","name":"Witget","origin":"RU","fundingCurrencyCode":"USD","urlTwitter":"witgetcom","urlCrunchbase":"organization/witget","urlWebsite":"witget.com","descShort":"Web-builder
+        of in-site marketing tools","descFull":"Witget.com is an online witget builder
+        that helps to increase site conversion rate up to 3 times! Working with witget
+        is so easy! Within 5 minutes and for only 5 actions you can create exclusive
+        witget for your site! Witget is a handy and effective conversion tool that
+        helps to build witgets (popups, layers, welcome bars, etc.). It''s simple
+        so that everyone (even non IT or design professional) can create a witget
+        within 5 minutes and for 5 actions. There are several steps to build a witget:
+        1. Create an account and give the name to your project. 2. Choose a witget
+        template and slightly edit it. 3. Set the terms of smartbox display. 3. Put
+        a code of witget on your site (takes less than a minute). 5. Display witget
+        and ranalyse the statistics! How does it work: You can analyze CTR, conversion
+        of the witget. You can a/b test witgets, You can know everything about your
+        visitors (interests, history of visits, etc.), You can personilize your offers
+        using these data. You can use witget-broker to display the most efficient
+        witgets that give you maximum of leads. Key features Online No coding and
+        ; special knowledge needed Perfectly customizable Dozens of beautiful templates
+        Thousands of quite the splendid images Google and ;Yandex friendly :)","type":"company"},{"_id":"Organization/1053877521855","_rev":"86536224687196","_key":"1053877521855","investorCount":null,"phone":null,"fundingCurrencyCode":null,"wentIPO":false,"wasAcquired":true,"fundingTotal":0,"inCount":38,"outCount":8,"ec":46,"fundingLevel":5,"invRatio":0,"mc":34712,"dateFounded":1041408000,"origin":"US","urlTwitter":"android_feed","urlCrunchbase":"organization/android","urlWebsite":"android.com","urlSlug":"android","descShort":"Android
+        provides an open-source mobile software platform that allows developers to
+        create applications for mobile devices.","descFull":"In August 2005, Google
+        acquired Android, a small startup company based in Palo Alto, CA. Android''s
+        co-founders who went to work at Google included Andy Rubin (co-founder of
+        Danger), Rich Miner (co-founder of Wildfire), Nick Sears (once VP at T-Mobile),
+        and Chris White (one of the first engineers at WebTV). At the time, little
+        was known about the functions of Android other than they made software for
+        mobile phones. This began rumors that Google was planning to enter the mobile
+        phone market, although it was unclear at the time what function they might
+        perform in that market. Android has a large community of developers writing
+        applications (''apps'') that extend the functionality of the devices. There
+        are currently over 200,000 apps available for Android. Android Market is the
+        online app store run by Google, though apps can also be downloaded from third-party
+        sites. Developers write primarily in the Java language, controlling the device
+        via Google-developed Java libraries. The unveiling of the Android distribution
+        on 5 November 2007 was announced with the founding of the Open Handset Alliance,
+        a consortium of 80 hardware, software, and telecom companies devoted to advancing
+        open standards for mobile devices. Google released most of the Android code
+        under the Apache License, a free software and open source license. The Android
+        open-source software stack consists of Java applications running on a Java-based,
+        object-oriented application framework on top of Java core libraries running
+        on a Dalvik virtual machine featuring JIT compilation. Libraries written in
+        C include the surface manager, OpenCore media framework, SQLite relational
+        database management system, OpenGL ES 2.0 3D graphics API, WebKit layout engine,
+        SGL graphics engine, SSL, and Bionic libc. The Android operating system, including
+        the Linux kernel, consists of roughly 12 million lines of code including 3
+        million lines of XML, 2.8 million lines of C, 2.1 million lines of Java, and
+        1.75 million lines of C++.","urlAngellist":"android","slug":"android","name":"Android","type":"company"},{"_id":"Organization/1088865357247","_rev":"86461566403676","_key":"1088865357247","investorCount":null,"fundingCurrencyCode":null,"fundingTotal":0,"inCount":15,"outCount":31,"ec":46,"fundingLevel":2,"invRatio":0,"mc":10,"dateFounded":1293868800,"urlSlug":"avos","urlTwitter":"avos_com","urlCrunchbase":"organization/avos","urlWebsite":"avos.com","descShort":"AVOS
+        Systems is a technology company with a platform that helps developers create
+        apps in real-time.","descFull":"AVOS Systems is an Internet company led by
+        YouTube co-founders Chad Hurley and Steve Chen. AVOS is headquartered in San
+        Mateo, California with additional offices in Beijing, China and Dunedin, New
+        Zealand. AVOS recently closed a Series A financing led by New Enterprise Associates
+        and Google Ventures with participation from Madrone Capital and China-based
+        incubator Innovation Works. AVOS is committed to building great products that
+        people use in their everyday lives. We demand excellence both in the products
+        we build and in the team members we hire. In 2011, AVOS acquired Delicious.com,
+        the leading bookmarking service. Previously, Hurley and Chen co-founded YouTube,
+        the world''s largest video site, in 2005, which was acquired by Google 18
+        months later for $1.76B. Hurley and Chen were early employees at PayPal, a
+        leading online payment service which is now part of eBay.","urlAngellist":"avos-systems","slug":"avos-systems","name":"AVOS
+        Systems","type":"company","phone":"(650) 332-4230"},{"_id":"Organization/1082556730815","_rev":"86535250560092","_key":"1082556730815","investorCount":null,"phone":null,"wentIPO":false,"wasAcquired":false,"fundingTotal":40000,"inCount":4,"outCount":40,"ec":44,"fundingLevel":2,"invRatio":0,"mc":0,"dateFounded":1293868800,"origin":"US","fundingCurrencyCode":"USD","urlTwitter":"memorybistro","urlCrunchbase":"organization/memorybistro","urlWebsite":"memorybistro.com","urlSlug":"memorybistro","descShort":"MemoryBistro
+        is a collaborative social media platform that operates as a digital scrapbook
+        and storytelling platform.","descFull":"MemoryBistro is a secure, collaborative
+        social media experience where you can preserve the full story of your favorite
+        memories shared with the people you care about the most. Most social media
+        platforms have evolved into three categories: 1) designed for capturing the
+        random thought or moment; 2) aggregator of online activities, good or bad;
+        or 3) focused on a specific niche such as memorializing a deceased loved one
+        or friend. MemoryBistros proprietary platform is an easy-to-use, multimedia
+        experience for people to choose what memories and stories they want to preserve
+        in a more engaging, long-lasting format. The difference lies in collaborative
+        storytelling to create a living memory that engages people for days beyond
+        the initial post. MemoryBistro allows members to select collaborators who
+        will add their ''piece'' within the storynot just in a ''comments'' section.
+        Our HTML5-based user interface allows members to drag-and-drop media assets
+        then links them together so the reader has context of each element within
+        the living memory. Members will also enjoy a high level of security by selecting
+        what memories to preservenot just online activities.","urlAngellist":"memorybistro","slug":"memorybistro","name":"MemoryBistro","type":"company"},{"_id":"Organization/1045298073023","_rev":"86496674890844","_key":"1045298073023","investorCount":null,"wentIPO":false,"wasAcquired":false,"fundingTotal":42470343,"inCount":8,"outCount":34,"ec":42,"fundingLevel":2,"invRatio":0,"mc":1,"dateFounded":1230796800,"origin":"US","fundingCurrencyCode":"USD","urlTwitter":"netsertive","urlCrunchbase":"organization/netsertive","urlWebsite":"netsertive.com","urlSlug":"netsertive","descShort":"Netsertives
+        intelligent online marketing platform puts big brand marketing to work for
+        local businesses","descFull":"Netsertives intelligent online marketing platform
+        brings brands and local businesses together to win local customers. Based
+        in Research Triangle Park, North Carolina, the company leverages its proprietary
+        data intelligence engine and deep expertise in the automotive, major appliance,
+        furniture, consumer electronics, IT technology, dental and eye care categories
+        to deliver unprecedented speed, performance and value from campaign enablement
+        through execution. Netsertive also offers co-op marketing approval and reimbursement
+        facilitation to its customers. Founded in 2009, the company has a history
+        of rapid growth, a world-class team, and the strength of venture capital funding
+        from top firms RRE Ventures, Harbert Venture Partners and Greycroft Partners.
+        Netsertive was recently named 2014 Software Company of the Year by North Carolina
+        Technology Association and appeared 9th in the Triangle Business Journals
+        Fast 50. Additional information about Netsertive is available at www.netsertive.com.","urlAngellist":"netsertive","slug":"netsertive","name":"Netsertive","type":"company","phone":"(800)
+        940-4351"},{"_id":"Organization/1048906091967","_rev":"86564109730908","_key":"1048906091967","fundingTotal":null,"investorCount":null,"urlAngellist":null,"phone":null,"wentIPO":false,"wasAcquired":false,"inCount":10,"outCount":32,"ec":42,"fundingLevel":0,"invRatio":0,"mc":0,"dateFounded":1262332800,"urlTwitter":"fstje","urlSlug":"feest","origin":"NL","urlCrunchbase":"organization/feest-je","urlWebsite":"feest.je","descShort":"Lcation
+        based social network","descFull":"feest.je is a location based social network
+        that brings people together around spots and ; events. Users can check in,
+        earn rewards, discover new spots and ; events, party with friends and meet
+        new people. If you have an iPhone, you can download the app for free from
+        the iTunes AppStore. Users with an Android, Blackberry, Nokia or Palm can
+        access the mobile web version at http://m.feest.je","slug":"feest-je","name":"feest.je","type":"company"},{"_id":"Organization/1069377768895","_rev":"86553684591708","_key":"1069377768895","investorCount":null,"phone":null,"wentIPO":false,"wasAcquired":false,"fundingTotal":950000,"inCount":11,"outCount":28,"ec":39,"fundingLevel":2,"invRatio":0,"mc":0,"dateFounded":1293868800,"origin":"US","fundingCurrencyCode":"USD","urlTwitter":"webtalkdotorg","urlCrunchbase":"organization/webtalk","urlWebsite":"webtalk.org","urlSlug":"webtalk","descShort":"Webtalk
+        securely. Real privacy and security for professionals.","descFull":"Webtalk
+        is an online professional networking utility with a focus on enterprise level
+        security and privacy, offering self-obliterating and high level encryption-based
+        private messages, along with many other top privacy features. Its primary
+        sources of revenue are in-app purchases and advertising, similar to LinkedIn,
+        Webtalks largest competition. The global market potential is in the billions
+        of dollars annually. Webtalks marketing model is a residual income based revenue
+        sharing affiliate program, where any user can share in up to 50% of all in-app
+        account upgrades and advertising revenues for life simply by joining for free
+        and inviting their friends. Today, Webtalk has 88,000 pre-registered users
+        waiting to join the upcoming public Beta launch.","urlAngellist":"webtalk","slug":"webtalk","name":"Webtalk","type":"company"},{"_id":"Organization/1100900322751","_rev":"86538289529948","_key":"1100900322751","fundingTotal":null,"investorCount":null,"phone":null,"wentIPO":false,"wasAcquired":false,"inCount":12,"outCount":23,"ec":35,"fundingLevel":0,"invRatio":0,"mc":0,"dateFounded":1293868800,"urlTwitter":"nearme","slug":"nearme","name":"NearMe","origin":"GB","urlCrunchbase":"organization/nearme","urlWebsite":"getnearme.com","urlSlug":"getnearme","descShort":"Location
+        Based Service","descFull":"NearMe is a service connecting retailers and brands
+        to consumers on the go. The NearMe service (www.getnearme.com) gives businesses
+        a platform to reach nearby consumers with relevant news, offers and promotions:
+        consumers take advantage of exclusive deals; merchants increase sales and
+        customer retention. The service has been active for the last 2 years and last
+        year was picked up and promoted by CNN as one the ''Top Travel Apps'' to have
+        on your smartphone. Our customers include brands like Marks and Spencer, William
+        Hill, Barclays, Clarks, Vodafone, Pizza Hut and new brands are added every
+        month.","urlAngellist":"nearme-1","type":"company"},{"_id":"Organization/1062502387135","_rev":"86475215258716","_key":"1062502387135","fundingTotal":null,"investorCount":null,"wentIPO":false,"wasAcquired":false,"inCount":10,"outCount":24,"ec":34,"fundingLevel":0,"invRatio":0,"mc":0,"dateFounded":1262332800,"origin":"US","urlTwitter":"appfusions","urlCrunchbase":"organization/appfusions","urlWebsite":"appfusions.com","urlSlug":"appfusions","descShort":"AppFusions
+        closes the gap between enterprise system silos, providing seamless integrated
+        user experiences.","descFull":"Founded in 2010 by co-founders Ellen Feaheny
+        and Patrick Li, AppFusions provides seamlessly integrated user experiences
+        between Enterprise software systems (both SaaS-based or on-premise). AppFusions
+        solves ''digital collaboration paradox'' problems end-to-end, bringing most
+        used but silo''d systems together for more cohesive work processes, efficiencies,
+        and collaborations. Their solutions include natively integrated use-case driven
+        UIs, seamless authentications between the systems, user experiences to delight
+        and increase employee engagement, and quick availability. AppFusions bridges
+        some of the most popular digital collaboration systems on the market, including
+        systems by IBM, Google, Salesforce, Microsoft, Jive, Atlassian, Dropbox, Box,
+        Egnyte, Alfresco, Lingotek, and more. With AppFusions, gone are the days of
+        lengthy integration requirements or RFP definition phases, long procurement
+        approval cycles, and delayed or deferred PoC windows; AppFusions'' well-vetted
+        solutions are ready and available, and can be provisioned or deployed within
+        days, and sometimes hours. AppFusions'' customers include CA Technologies,
+        Amgen, Neiman Marcus, AT and ;T, Netflix, Hubspot, Riot Games, Seagate, BAE
+        Systems, Coca-Cola, Verisk (ISO), Cadence, Roche, Pinterest, and many more.
+        For more information, please visit www.appfusions.com, @appfusions on Twitter
+        or LinkedIn, or call us.","urlAngellist":"appfusions","slug":"appfusions","name":"AppFusions","type":"company","phone":"(888)
+        516-2890"},{"_id":"Organization/1381756161471","_rev":"86477643367516","_key":"1381756161471","urlLinkedIn":null,"urlFacebook":null,"fundingTotal":null,"investorCount":null,"urlAboutMe":null,"urlBehance":null,"urlDribble":null,"wentIPO":false,"wasAcquired":false,"inCount":0,"outCount":32,"ec":32,"fundingLevel":0,"invRatio":0,"mc":0,"dateFounded":1296777600,"urlTwitter":"geekotronics","urlCrunchbase":"organization/geekotronic","urlWebsite":"geekotronic.com","urlSlug":"geekotronic","descShort":"The
+        Tech Blog","urlBlog":"geekotronic.com","slug":"geekotronic","name":"GeekoTronic","type":"company","phone":"+919767806500","urlBlogFeed":"feeds.feedburner.com/geekotronic","email":"siddarthgandhi@gmail.com"},{"_id":"Organization/1170590977471","_rev":"86531018769500","_key":"1170590977471","urlTwitter":null,"urlCrunchbase":null,"companySize":null,"urlLinkedIn":null,"urlFacebook":null,"urlBlog":null,"fundingTotal":null,"investorCount":null,"wentIPO":false,"wasAcquired":false,"inCount":1,"outCount":31,"ec":32,"fundingLevel":0,"invRatio":0,"mc":0,"urlWebsite":"wearedbp.com","urlSlug":"wearedbp","descShort":"Digital
+        Business Technology Activation","descFull":"Digital Technology Consulting
+        \r We help our clients understand the impact that digital is having to their
+        customers and business.\r \r We help our clients develop digital strategies
+        that are tightly aligned to business goals and corporate priorities.\r \r
+        We help our clients build world-class digital technologies capabilities that
+        accelerate business outcomes with best-in-class cost structures.\r \r We help
+        brands, agencies and technology vendors to get better at what they do.\r \r
+        We aim to digital to build relationships and utilize technology to effectively
+        personalize marketing efforts.","urlAngellist":"digital-business-partners","slug":"digital-business-partners","name":"Digital
+        Business Partners","type":"company"},{"_id":"Organization/1149250227647","_rev":"86491324859484","_key":"1149250227647","fundingTotal":null,"investorCount":null,"phone":null,"inCount":1,"outCount":30,"ec":31,"fundingLevel":0,"invRatio":0,"mc":0,"dateFounded":1230796800,"urlSlug":"webali","urlAngellist":"webali","slug":"webali","name":"Webali","urlTwitter":"web_ali","urlCrunchbase":"organization/webali","urlWebsite":"webali.eu","descShort":"web
+        applications localization developmen","descFull":"WEBALI is an agency specialized
+        in web design, web marketing and web 2.0 solutions. We are specialists in
+        the main technologies for web, in which we can supply services with quality
+        and we are sufficiently competitive. Our strategy focus in developing the
+        best solution for our customers, in accordance with it''s specific needs,
+        but placing our know-how in action. Our differentiation is centered in our
+        range of technologies together with excellency of design.","type":"company"},{"_id":"Organization/1383630753215","_rev":"86536001012828","_key":"1383630753215","urlLinkedIn":null,"urlFacebook":null,"fundingTotal":null,"investorCount":null,"urlAboutMe":null,"urlBehance":null,"urlDribble":null,"wentIPO":false,"wasAcquired":false,"inCount":0,"outCount":31,"ec":31,"fundingLevel":0,"invRatio":0,"mc":0,"dateFounded":1293840000,"urlTwitter":"salluhee","urlCrunchbase":"organization/techni-leaks","urlWebsite":"technileaks.com","urlSlug":"technileaks","descShort":"Techni
+        Leaks is a blog that keeps you in","urlBlog":"technileaks.com","slug":"techni-leaks","name":"Techni
+        Leaks","type":"company","phone":"00923125030209","urlBlogFeed":"feeds.feedburner.com/technileaks","email":"salman_olevel@hotmail.com"},{"_id":"Organization/1105276882367","_rev":"86490013811804","_key":"1105276882367","urlWebsite":null,"urlSlug":null,"investorCount":null,"urlAngellist":null,"phone":null,"wentIPO":false,"wasAcquired":false,"fundingTotal":4000,"inCount":0,"outCount":31,"ec":31,"fundingLevel":2,"invRatio":0,"mc":0,"dateFounded":1262332800,"origin":"US","fundingCurrencyCode":"USD","urlTwitter":"gr8erminds","urlCrunchbase":"organization/gr8erminds","descShort":"Gr8erMinds
+        offers Sera, a social networking utility that embodies social media to create
+        web presence.","descFull":"Gr8erMinds LLC, is a conceptual development company
+        that aims to solve critical, global problems with the technology that is currently
+        available. With the rise of the Smartphone, an entirely new, unexplored realm
+        of business has been established. This is the basis of Gr8erMinds'' first
+        division, PerSer Corp. PerSera, Gr8erMinds'' flagship product, is a mass consolidation
+        effort of many major web presences. By removing the features users dislike,
+        and from listening to popular opinion, a software solution has be devised
+        that will ''...be used by the masses for years to come.'' according to the
+        Company''s CEO, Joseph Truax. Gr8erMinds is currently increasing it''s presence
+        on the internet, and little information outside of that provided is known,
+        but they claim to have very large, revolutionary ideas.","slug":"gr8erminds","name":"Gr8erMinds","type":"company"},{"_id":"Organization/1101253758399","_rev":"86521768166492","_key":"1101253758399","investorCount":null,"fundingCurrencyCode":null,"fundingTotal":10500001,"inCount":13,"outCount":18,"ec":31,"fundingLevel":2,"invRatio":0,"mc":1,"dateFounded":1104566400,"urlTwitter":"mercentmercent","urlCrunchbase":"organization/mercentcorporation","urlWebsite":"mercent.com","urlSlug":"mercent","descShort":"Mercent
+        provides advertising, analytics and merchandising optimization solutions that
+        enable retailers to reach and convert online shoppers.","descFull":"Founded
+        by veterans of Amazon.com, Mercent is a leading technology company that enables
+        retailers to profitably reach and convert more shoppers online. Through its
+        award-winning Mercent Retail technology Mercent helps large brand name retailers,
+        including 1-800-Flowers, the Home Shopping Network, GUESS?, L''Occitane USA
+        and others, reach and convert consumers shopping online. Supported purchasing
+        destinations include Amazon.com, Google, eBay, Bing, comparison shopping engines
+        (CSEs), affiliate networks, social shopping sites and paid search and display
+        advertising campaigns. The company is venture-funded and based in Seattle,
+        WA. For more information, visit www.mercent.com.","urlAngellist":"mercent-corporation","slug":"mercent","name":"Mercent
+        Corporation","type":"company","phone":"(206) 832-3900"},{"_id":"Organization/1166247841215","_rev":"86492226962524","_key":"1166247841215","urlTwitter":null,"urlCrunchbase":null,"urlWebsite":null,"urlSlug":null,"descShort":null,"descFull":null,"companySize":null,"urlLinkedIn":null,"urlFacebook":null,"urlBlog":null,"fundingTotal":null,"investorCount":null,"wentIPO":false,"wasAcquired":false,"inCount":4,"outCount":26,"ec":30,"fundingLevel":0,"invRatio":0,"mc":0,"urlAngellist":"chelsea-apps-factory","slug":"chelsea-apps-factory","name":"Chelsea
+        Apps Factory","type":"company"},{"_id":"Organization/1044993527231","_rev":"86463738594396","_key":"1044993527231","fundingTotal":null,"investorCount":null,"urlAngellist":null,"phone":null,"wentIPO":false,"wasAcquired":false,"inCount":12,"outCount":18,"ec":30,"fundingLevel":0,"invRatio":0,"mc":1,"dateFounded":1199174400,"origin":"US","urlTwitter":"altadyn","urlCrunchbase":"organization/altadyn","urlWebsite":"altadyn.com","urlSlug":"altadyn","descShort":"3D
+        immersive web for meetings","descFull":"Altadyn is changing the way we meet,
+        organize events such as trade shows, conferences or corporate trainings, the
+        way we collaborate, socialize, market, sell, or interact. The company is emerging
+        as the leader in live 3D collaboration. Already considered by analysts as
+        the technological leader, the company is even widening the gap with the competition
+        with each new release. Altadyn is already delivering value to major customers
+        including NDU (National Defense University), Dell Inc. (NASDAQ: DELL), Cap
+        Gemini, Saint-Gobain (NYSE Euronext: SGO), US Air Force, Cubic (NYSE: CBC),
+        Aptima, Old Dominion University and more. Altadyn has offices in Irvine, California
+        and ; Paris, France. Product (see video here: http://youtu.be/zby4e-p0h7w
+        ) : 3D-VirtualEvents.com is a new type of user experience (Immersive 3D),
+        leveraging our cutting edge web3D platform for live collaboration, meetings,
+        conferences, events, virtual classrooms, virtual website lobbies, which are
+        accessible to all. 3D-VirtualEvents.com is the first and only web full immersive
+        3D platform which does not require any download or installation and works
+        with any browser on any computer. It''s a disruptive technology which brings
+        high-end 3D capabilities into simple browsers on any computer. Why meeting
+        in 3D ?: It gives the feeling of real face to face meetings at the cost of
+        a webex meeting. No more attendees checking e-mails during a meeting, or taking
+        a phone call! 3D immersive meetings are much more engaging, attendees feel
+        each otheras presence, can network with each other and more importantly can
+        interact with 3D products during presentations, design review, trainings,
+        maintenance and more. Video conferencing and traditional web meeting solutions
+        donat offer these capabilities.","slug":"altadyn","name":"Altadyn","type":"company"},{"_id":"Organization/1101255855551","_rev":"86562875491420","_key":"1101255855551","investorCount":null,"wentIPO":false,"wasAcquired":false,"fundingTotal":6230899,"inCount":2,"outCount":28,"ec":30,"fundingLevel":2,"invRatio":0,"mc":0,"dateFounded":1072944000,"origin":"US","fundingCurrencyCode":"USD","urlTwitter":"cartasite","urlCrunchbase":"organization/cartasite","urlWebsite":"cartasite.com","urlSlug":"cartasite","descShort":"Cartasite
+        is engaged in the real-time monitoring of remote assets, vehicles, and resources.","descFull":"Formed
+        in early 2004, Cartasite is engaged in realtime monitoring of remote assets,
+        vehicles, and resources. With deployments worldwide, Cartasite has improved
+        safety, enhanced security, and ensured effective utilization of critical assets
+        for some of the largest corporations. Our focus has been the global energy
+        industry whose workers and equipment are placed into some of the harshest
+        conditions on the planet. Weave learned a lot about the realities on faraway
+        places, hostile environments, and the safety of people. It has prepared us
+        well for our newest adventure. Making safer streets! We believe ROVER will
+        change the way people think about driving, and we are committed to bringing
+        this lifesaving technology to people everywhere. Cartasiteas executive team
+        has a strong track record in the energy technology business, and the software,
+        systems, and services it delivers are setting new standards of operation and
+        producing substantial bottom line results for its customers. David Armitage,
+        founder and CEO, is renown for introducing game-changing solutions to the
+        geospatial industry, applying new technology to create practical, affordable,
+        and accessible solutions. GeoGraphix, his first company, was one of the first
+        and largest Windows based applications ever developed, and is still the leading
+        desktop GIS system used worldwide by geoscientists. Cartasite has optimized
+        the data processing, visualization, and deployment of wireless telemetry systems
+        to accommodate the unique demands of the global energy industry and currently
+        operates both domestically and internationally monitoring thousands of critical
+        assets and locations.","urlAngellist":"cartasite","slug":"cartasite","name":"Cartasite","type":"company","phone":"+44
+        20 8123 2254"}]}'
+    http_version: 
+  recorded_at: Wed, 25 May 2016 19:28:14 GMT
+recorded_with: VCR 3.0.1

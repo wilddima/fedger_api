@@ -7,7 +7,7 @@ describe FedgerAPI::Client, vcr: true do
 
   let(:client) { FedgerAPI::Client.new(fedger_api_config['api_key']) }
 
-  context FedgerAPI::Client::News do
+  context FedgerAPI::Client::Stats do
     context '#latest_fundings' do
       subject { client.stats_fundings(fedger_api_config['year'], {month: 1, country: fedger_api_config['iso_country']}) }
 

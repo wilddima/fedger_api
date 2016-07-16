@@ -1,0 +1,145 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fedger.io/v1/tagged//funding?apikey=ed30ea0896b8449ec44e974a40d1b0e3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sat, 16 Jul 2016 11:40:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - origin,accept-encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-None-Match, apikey
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Cache-Control:
+      - no-cache
+      Via:
+      - kong/0.5.4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"statusCode":404,"error":"Not Found"}'
+    http_version: 
+  recorded_at: Sat, 16 Jul 2016 11:41:13 GMT
+- request:
+    method: get
+    uri: https://api.fedger.io/v1/tagged/funding?apikey=ed30ea0896b8449ec44e974a40d1b0e3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Sat, 16 Jul 2016 11:43:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - origin,accept-encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-None-Match, apikey
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Cache-Control:
+      - no-cache
+      Via:
+      - kong/0.5.4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"statusCode":400,"error":"Bad Request","message":"child \"tags\" fails
+        because [\"tags\" is required]","validation":{"source":"query","keys":["tags"]}}'
+    http_version: 
+  recorded_at: Sat, 16 Jul 2016 11:43:34 GMT
+- request:
+    method: get
+    uri: https://api.fedger.io/v1/tagged/funding?apikey=ed30ea0896b8449ec44e974a40d1b0e3&isJoin=true&range_from=1&range_to=20&tags=google
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Jul 2016 11:44:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - origin,accept-encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-None-Match, apikey
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Cache-Control:
+      - no-cache
+      Via:
+      - kong/0.5.4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"cursor":1,"fundings":[]}'
+    http_version: 
+  recorded_at: Sat, 16 Jul 2016 11:45:10 GMT
+recorded_with: VCR 3.0.1

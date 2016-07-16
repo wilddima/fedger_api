@@ -57,13 +57,6 @@ describe FedgerAPI::Client, vcr: true do
       it { should include('peers') }
     end
 
-    context '#peers' do
-      subject { client.peers(fedger_api_config['test_company']) }
-
-      it { should be_an Hash }
-      it { should include('peers') }
-    end
-
     context '#portfolio_companies' do
       subject { client.portfolio_companies(fedger_api_config['test_company']) }
 
@@ -71,8 +64,8 @@ describe FedgerAPI::Client, vcr: true do
       it { should include('domain', 'name', 'portfolio') }
     end
 
-    context '#snapshot' do
-      subject { client.snapshot(fedger_api_config['test_company']) }
+    context '#company_snapshot' do
+      subject { client.company_snapshot(fedger_api_config['test_company']) }
 
       it { should be_an Hash }
       it { should include('fundingLevel', 'dateFounded', 'name', 'slug') }

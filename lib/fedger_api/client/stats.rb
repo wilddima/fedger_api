@@ -1,7 +1,7 @@
 module FedgerAPI
   class Client
     module Stats
-      #
+      #TODO
       def stats_fundings(year, query)
         stats_provider(year, query, '/fundings')
       end

@@ -1,7 +1,7 @@
 module FedgerAPI
   class Client
     module News
-      #
+      #Returns a collection of the most recent fundings covered.
       def latest_fundings
         news_provider('/fundings')
       end

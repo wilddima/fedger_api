@@ -1,3 +1,4 @@
-api_key: '12345'
+api_key: ~
 test_company: 'google.com'
 discovery_query: 'google'
+iso_country: 'RU'

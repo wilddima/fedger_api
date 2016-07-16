@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.fedger.io/v1/discover/companies?apikey=ed30ea0896b8449ec44e974a40d1b0e3&s=
+    uri: https://api.fedger.io/v1/geo/google/companies?apikey=ed30ea0896b8449ec44e974a40d1b0e3
     body:
       encoding: US-ASCII
       string: ''
@@ -15,11 +15,11 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 404
+      message: Not Found
     headers:
       Date:
-      - Wed, 25 May 2016 19:25:25 GMT
+      - Sat, 16 Jul 2016 11:08:15 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -44,10 +44,9 @@ http_interactions:
       - kong/0.5.4
     body:
       encoding: ASCII-8BIT
-      string: '{"statusCode":400,"error":"Bad Request","message":"child \"s\" fails
-        because [single value of \"s\" fails because [\"0\" is not allowed to be empty]]","validation":{"source":"query","keys":["s.0"]}}'
+      string: '{"statusCode":404,"error":"Not Found"}'
     http_version: 
-  recorded_at: Wed, 25 May 2016 19:25:41 GMT
+  recorded_at: Sat, 16 Jul 2016 11:08:34 GMT
 - request:
     method: get
     uri: https://api.fedger.io/v1/discover/companies?apikey=ed30ea0896b8449ec44e974a40d1b0e3&s=google
@@ -67,7 +66,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 25 May 2016 19:27:59 GMT
+      - Sat, 16 Jul 2016 11:09:41 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -422,5 +421,5 @@ http_interactions:
         assets and locations.","urlAngellist":"cartasite","slug":"cartasite","name":"Cartasite","type":"company","phone":"+44
         20 8123 2254"}]}'
     http_version: 
-  recorded_at: Wed, 25 May 2016 19:28:14 GMT
+  recorded_at: Sat, 16 Jul 2016 11:10:00 GMT
 recorded_with: VCR 3.0.1

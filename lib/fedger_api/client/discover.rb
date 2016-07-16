@@ -18,9 +18,9 @@ module FedgerAPI
 
       private
 
-      def discovery_provider(query, method)
+      def discovery_provider(query, uri)
         @options[:query][:s] = query
-        self.class.get("/discover#{method}", @options).to_h
+        self.class.get("/discover#{uri}", @options).to_h
       end
     end
   end

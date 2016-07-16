@@ -19,7 +19,7 @@ http_interactions:
       message: Internal Server Error
     headers:
       Date:
-      - Sun, 27 Mar 2016 09:12:51 GMT
+      - Sat, 16 Jul 2016 11:08:06 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -47,5 +47,5 @@ http_interactions:
       string: '{"statusCode":500,"error":"Internal Server Error","message":"An internal
         server error occurred"}'
     http_version: 
-  recorded_at: Sun, 27 Mar 2016 09:12:59 GMT
+  recorded_at: Sat, 16 Jul 2016 11:08:25 GMT
 recorded_with: VCR 3.0.1

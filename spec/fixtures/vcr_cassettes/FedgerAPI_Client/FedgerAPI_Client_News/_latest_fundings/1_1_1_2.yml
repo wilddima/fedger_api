@@ -107,4 +107,88 @@ http_interactions:
         Capital","slug":"ngn-capital","domain":"ngncapital.com"},{"name":"QIAGEN","slug":"qiagen","domain":"qiagen.com"}]}]}'
     http_version: 
   recorded_at: Sat, 16 Jul 2016 11:15:22 GMT
+- request:
+    method: get
+    uri: https://api.fedger.io/v1/stats/fundings/2016?country=RU&month=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Sat, 16 Jul 2016 11:32:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - Key realm="kong"
+      Server:
+      - kong/0.5.4
+    body:
+      encoding: UTF-8
+      string: '{"message":"No API Key found in headers, body or querystring"}
+
+'
+    http_version: 
+  recorded_at: Sat, 16 Jul 2016 11:32:31 GMT
+- request:
+    method: get
+    uri: https://api.fedger.io/v1/stats/fundings/2016?apikey=ed30ea0896b8449ec44e974a40d1b0e3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Jul 2016 11:34:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - origin,accept-encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-None-Match, apikey
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Cache-Control:
+      - no-cache
+      Via:
+      - kong/0.5.4
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"Fundings 2016","year":2016,"currency":"USD","count":533,"total":12864873447,"min":100,"max":650000000,"mean":22513088,"stddev":44019772}'
+    http_version: 
+  recorded_at: Sat, 16 Jul 2016 11:34:38 GMT
 recorded_with: VCR 3.0.1

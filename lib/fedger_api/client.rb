@@ -3,6 +3,7 @@ require_relative 'client/company.rb'
 require_relative 'client/discover.rb'
 require_relative 'client/geo.rb'
 require_relative 'client/news.rb'
+require_relative 'client/stats.rb'
 
 module FedgerAPI
   # Class provide connection to fedger.io api
@@ -12,6 +13,7 @@ module FedgerAPI
     include FedgerAPI::Client::Discover
     include FedgerAPI::Client::Geo
     include FedgerAPI::Client::News
+    include FedgerAPI::Client::Stats
 
     base_uri 'https://api.fedger.io/v1'
     format :json

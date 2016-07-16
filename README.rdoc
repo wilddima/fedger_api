@@ -1,3 +1,6 @@
 == Fedger_api
 
+{<img src="https://travis-ci.org/WildDima/fedger_api.svg?branch=master"
+alt="Build Status" />}[https://travis-ci.org/WildDima/fedger_api]
+
 Ruby library for https://fedger.io api.

@@ -2,3 +2,4 @@ api_key: ~
 test_company: 'google.com'
 discovery_query: 'google'
 iso_country: 'RU'
+year: '2016'

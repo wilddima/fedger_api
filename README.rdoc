@@ -4,3 +4,56 @@
 alt="Build Status" />}[https://travis-ci.org/WildDima/fedger_api]
 
 Ruby library for https://fedger.io api.
+------------
+=== Installation
+------------
+Add this to your application's Gemfile:
+
+    gem «fedger_api»
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install fedger_api
+------------
+=== Example
+------------
+More information about API on https://dev.fedger.io/docs
+
+  client = FedgerAPI::Client.new(api key)
+
+==== Company
+
+  #Returns a detailed funding history collection.
+  client.funding_details(company domain)
+
+  #Returns Total funding amount and current stage.
+  client.funding_status(company domain)
+
+  #Returns a detailed funding history collection.
+  client.fundings(company domain)
+
+  #Returns nodes connected to a company.
+  client.company_insights(company_domain)
+
+  #Returns a list of investors in a company.
+  client.investors(company_domain)
+
+  #Returns a list with city/country for operative sites of a company.
+  client.locations(company_domain)
+
+  #Returns company peers.
+  client.peers(company_domain)
+
+  #List of company names, an investor has invested in.
+  client.portfolio_companies(company_domain)
+
+  #Returns details of a company profile.
+  client.company_snapshot(company_domain)
+
+  #Returns team profiles for a company.
+  client.team_details(company_domain)
+

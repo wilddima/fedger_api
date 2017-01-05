@@ -11,8 +11,8 @@ describe FedgerAPI::Client, vcr: true do
     context '#latest_fundings' do
       subject { client.latest_fundings() }
 
-      it { should be_an Hash }
-      it { should include('date_reference', 'fundings') }
+      it { should be_an FedgerAPI::Response }
+      it { should respond_to(:date_reference, :fundings) }
     end
   end
 

@@ -11,22 +11,22 @@ describe FedgerAPI::Client, vcr: true do
     context '#discovery' do
       subject { client.discovery(fedger_api_config['discovery_query']) }
 
-      it { should be_an Hash }
-      it { should include('data') }
+      it { should be_an FedgerAPI::Response }
+      it { should respond_to(:data) }
     end
 
     context '#discovery_companies' do
       subject { client.discovery_companies(fedger_api_config['discovery_query']) }
 
-      it { should be_an Hash }
-      it { should include('cursor', 'data') }
+      it { should be_an FedgerAPI::Response }
+      it { should respond_to(:cursor, :data) }
     end
 
     context '#discovery_vertices' do
       subject { client.discovery_vertices(fedger_api_config['discovery_query']) }
 
-      it { should be_an Hash }
-      it { should include('cursor', 'total_count', 'data') }
+      it { should be_an FedgerAPI::Response }
+      it { should respond_to(:cursor, :total_count, :data) }
     end
   end
 end

@@ -14,7 +14,11 @@ module FedgerAPI
       private
 
       def geo_provider(country_code, uri)
-        self.class.get("/geo/#{country_code}#{uri}", @options).to_h
+        Response.new(geo_request(country_code, uri))
+      end
+
+      def geo_request(country_code, uri)
+        self.class.get("/geo/#{country_code}#{uri}", merge_options)
       end
     end
   end

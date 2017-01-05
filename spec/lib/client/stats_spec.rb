@@ -11,8 +11,8 @@ describe FedgerAPI::Client, vcr: true do
     context '#latest_fundings' do
       subject { client.stats_fundings(fedger_api_config['year'], {month: 1, country: fedger_api_config['iso_country']}) }
 
-      it { should be_an Hash }
-      it { should include('year', 'currency', 'type') }
+      it { should be_an FedgerAPI::Response }
+      it { should respond_to(:year, :currency, :type) }
     end
   end
 

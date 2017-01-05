@@ -11,15 +11,15 @@ describe FedgerAPI::Client, vcr: true do
     context '#geo_located_companies' do
       subject { client.geo_located_companies(fedger_api_config['iso_country']) }
 
-      it { should be_an Hash }
-      it { should include('companies') }
+      it { should be_an FedgerAPI::Response }
+      it { should respond_to(:companies) }
     end
 
     context '#geo_located_fundings' do
       subject { client.geo_located_fundings(fedger_api_config['iso_country']) }
 
-      it { should be_an Hash }
-      it { should include('fundings') }
+      it { should be_an FedgerAPI::Response }
+      it { should respond_to(:fundings) }
     end
   end
 end

@@ -54,7 +54,11 @@ module FedgerAPI
       private
 
       def company_provider(company_domain, uri)
-        self.class.get("/company/#{company_domain}/#{uri}", @options)
+        Response.new(company_request(company_domain, uri))
+      end
+
+      def company_request(company_domain, uri)
+        self.class.get("/company/#{company_domain}/#{uri}", merge_options)
       end
     end
   end

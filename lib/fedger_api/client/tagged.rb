@@ -14,10 +14,10 @@ module FedgerAPI
       private
 
       def tagged_provider(query, uri)
-        Response.new(request(query, uri))
+        Response.new(tagged_request(query, uri))
       end
 
-      def request(query, uri)
+      def tagged_request(query, uri)
         self.class.get("/tagged#{uri}", merge_options(query))
       end
     end

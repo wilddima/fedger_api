@@ -1,6 +1,6 @@
 module FedgerAPI
   class Response
-    attr_reader :response, :cursor
+    attr_reader :response
 
     def initialize(response)
       @response = response

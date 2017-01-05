@@ -34,11 +34,12 @@ module FedgerAPI
       @response ||= Response
     end
 
-    def create_response(json_response)
-      response.new(json_response)
+    def create_response(http_response)
+      response.new(http_response)
     end
 
-    def merge_options(query)
+    def merge_options(query = nil)
+      return options unless query
       options.merge(query: options[:query].merge(query))
     end
   end

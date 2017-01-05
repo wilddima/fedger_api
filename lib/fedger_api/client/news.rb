@@ -9,7 +9,11 @@ module FedgerAPI
       private
 
       def news_provider(uri)
-        self.class.get("/news#{uri}", @options).to_h
+        Response.new(news_request(uri))
+      end
+
+      def news_request(uri)
+        self.class.get("/news#{uri}", merge_options)
       end
     end
   end

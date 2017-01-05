@@ -9,8 +9,11 @@ module FedgerAPI
       private
 
       def stats_provider(year, query, uri)
-        @options[:query].merge!(query)
-        self.class.get("/stats#{uri}/#{year}", @options).to_h
+        Response.new(stats_request(year, query, uri))
+      end
+
+      def stats_request(year, query, uri)
+        self.class.get("/stats#{uri}/#{year}", merge_options(query))
       end
     end
   end

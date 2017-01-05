@@ -19,8 +19,11 @@ module FedgerAPI
       private
 
       def discovery_provider(query, uri)
-        @options[:query][:s] = query
-        self.class.get("/discover#{uri}", @options).to_h
+        Response.new(discovery_request(query, uri))
+      end
+
+      def discovery_request(query, uri)
+        self.class.get("/discover#{uri}", merge_options(s: query))
       end
     end
   end

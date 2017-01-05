@@ -9,7 +9,7 @@ Ruby library for https://fedger.io api.
 ------------
 Add this to your application's Gemfile:
 
-    gem «fedger_api»
+    gem 'fedger_api'
 
 And then execute:
 

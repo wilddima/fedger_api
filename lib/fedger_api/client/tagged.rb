@@ -14,8 +14,11 @@ module FedgerAPI
       private
 
       def tagged_provider(query, uri)
-        @options[:query].merge!(query)
-        self.class.get("/tagged#{uri}", @options).to_h
+        Response.new(request(query, uri))
+      end
+
+      def request(query, uri)
+        self.class.get("/tagged#{uri}", merge_options(query))
       end
     end
   end

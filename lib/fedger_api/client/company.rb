@@ -53,8 +53,8 @@ module FedgerAPI
 
       private
 
-      def company_provider(company_domain,uri)
-        self.class.get("/company/#{company_domain}/#{uri}", @options).to_h
+      def company_provider(company_domain, uri)
+        self.class.get("/company/#{company_domain}/#{uri}", @options)
       end
     end
   end

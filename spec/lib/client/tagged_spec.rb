@@ -9,19 +9,45 @@ describe FedgerAPI::Client, vcr: true do
 
   context FedgerAPI::Client::Tagged do
     context '#tagged_companies' do
-      subject { client.tagged_companies({tags: fedger_api_config['discovery_query'], isJoin: 'true'}) }
+      subject(:request) { client.tagged_companies({tags: fedger_api_config['discovery_query'], isJoin: 'true'}) }
 
-      it { should be_an Hash }
-      it { should include('companies') }
+      it { should be_an FedgerAPI::Response }
+      it { should respond_to(:companies) }
+
+      context '#to_h' do
+        subject { request.to_h }
+
+        it { should be_an Hash }
+        it { should include('companies') }
+      end
+
+      context '#to_a' do
+        subject { request.to_a }
+
+        it { should be_an Array }
+      end
     end
   end
 
   context FedgerAPI::Client::Tagged do
     context '#tagged_fundings' do
-      subject { client.tagged_fundings({tags: fedger_api_config['discovery_query'], range_from: 1, range_to: 20, isJoin: true}) }
+      subject(:request) { client.tagged_fundings({tags: fedger_api_config['discovery_query'], range_from: 1, range_to: 20, isJoin: true}) }
 
-      it { should be_an Hash }
-      it { should include('fundings') }
+      it { should be_an FedgerAPI::Response }
+      it { should respond_to(:fundings) }
+
+      context '#to_h' do
+        subject { request.to_h }
+
+        it { should be_an Hash }
+        it { should include('fundings') }
+      end
+
+      context '#to_a' do
+        subject { request.to_a }
+
+        it { should be_an Array }
+      end
     end
   end
 

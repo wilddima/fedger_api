@@ -1,12 +1,11 @@
 /.bundle/
 /.yardoc
-/Gemfile.lock
 /_yardoc/
 /coverage/
 /doc/
 /pkg/
-/spec/reports/
 /tmp/
+/spec/fixtures/**/*
 .idea
 *.bundle
 *.so
@@ -18,3 +17,4 @@ mkmf.log
 .ruby-version
 fedger_api.yml
 .DS_Store
+/.

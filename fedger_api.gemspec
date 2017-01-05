@@ -15,9 +15,10 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/WildDima/fedger_api'
 
   s.add_dependency 'httparty'
-  s.add_development_dependency "bundler"
-  s.add_development_dependency "rake", "~> 11.0"
-  s.add_development_dependency "rspec", "~> 3.0"
-  s.add_development_dependency "vcr"
-  s.add_development_dependency "webmock"
+  s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'bundler'
+  s.add_development_dependency 'rake', '~> 11.0'
+  s.add_development_dependency 'rspec', '~> 3.0'
+  s.add_development_dependency 'vcr'
+  s.add_development_dependency 'webmock'
 end

@@ -1,4 +1,5 @@
 module FedgerAPI
+  # Class implements response
   class Response
     attr_reader :response
 

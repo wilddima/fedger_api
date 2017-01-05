@@ -1,5 +1,6 @@
 module FedgerAPI
   class Client
+    # Discover
     module Discover
       # Returns a graph of vertices and edges matching the search query.
       def discovery(query)

@@ -26,15 +26,17 @@ More information about API on https://dev.fedger.io/docs
   client = FedgerAPI::Client.new(api key)
 
 ==== Company
+  
+  company_domain = 'google.com'
 
   #Returns a detailed funding history collection.
-  client.funding_details(company domain)
+  client.funding_details(company_domain)
 
   #Returns Total funding amount and current stage.
-  client.funding_status(company domain)
+  client.funding_status(company_domain)
 
   #Returns a detailed funding history collection.
-  client.fundings(company domain)
+  client.fundings(company_domain)
 
   #Returns nodes connected to a company.
   client.company_insights(company_domain)
@@ -57,3 +59,39 @@ More information about API on https://dev.fedger.io/docs
   #Returns team profiles for a company.
   client.team_details(company_domain)
 
+==== Discover
+
+  # Returns a graph of vertices and edges matching the search query.
+  client.discovery(query)
+
+  # Returns detailed corresponding companies matching the search query.
+  client.discovery_companies(query)
+
+  # Returns detailed corresponding vertices matching the search query.
+  client.discovery_vertices(query)
+
+==== Geo
+
+  # Returns companies by region.
+  client.geo_located_companies(country_code)
+
+  # Returns fundings by region.
+  client.geo_located_fundings(country_code)
+
+
+==== News
+
+  # Returns a collection of the most recent fundings covered.
+  client.latest_fundings
+
+==== Stats
+
+  client.stats_fundings(year, query)
+
+==== Tagged
+
+  # Returns companies associated with tags.
+  client.tagged_companies(query)
+  
+  # Returns fundings associated with tags.
+  client.tagged_fundings(query)
